@@ -5,7 +5,7 @@ import { Menu } from '../components/Menu/Menu';
 import { Gallery } from '../components/Gallery/Gallery';
 import { Contact } from '../components/Contact/Contact';
 import { Footer } from '../components/Footer/Footer';
-import { Drink } from '../components/Drink/Drink';
+
 import '../global.css';
 import './index.css';
 

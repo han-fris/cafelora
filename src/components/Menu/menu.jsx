@@ -12,7 +12,7 @@ export const Menu = () => {
         <div className="drinks-list">
           <Drink
             id={0}
-            name="Romano"
+            name="Lungo"
             ordered={false}
             image="/cups/lungo.png"
             layers={[
