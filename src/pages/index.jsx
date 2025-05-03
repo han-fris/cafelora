@@ -23,6 +23,11 @@ document.querySelector('#root').innerHTML = render(
 
 const rolloutElement = document.querySelector('.nav-btn');
 const rolloutNav = document.querySelector('.rollout-nav');
+
 rolloutElement.addEventListener('click', () => {
   rolloutNav.classList.toggle('nav-closed');
+});
+
+rolloutNav.addEventListener('click', () => {
+  rolloutNav.classList.add('nav-closed');
 });
