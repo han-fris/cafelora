@@ -9,12 +9,17 @@ import { Footer } from '../components/Footer/Footer';
 import '../global.css';
 import './index.css';
 
+const response = await fetch('http://localhost:4000/api/drinks');
+const body = await response.json();
+const drinks = body.data;
+//console.log('ahoj', body);
+
 document.querySelector('#root').innerHTML = render(
   <div className="page">
     <Header />
     <main>
       <Banner />
-      <Menu />
+      <Menu drinks={drinks} />
       <Gallery />
       <Contact />
     </main>
